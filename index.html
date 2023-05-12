@@ -834,6 +834,7 @@ Reveal.on( 'customevent', function() {
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/Menu/menu.js"></script>
+		<script src="plugin/toolbar/toolbar.js"></script>
 
 		<script>
 
@@ -841,9 +842,6 @@ Reveal.on( 'customevent', function() {
 			// https://revealjs.com/initialization/
 			Reveal.initialize({
 				
-				dependencies: [  
-					{ src: 'plugin/toolbar/toolbar.js' }
-				]
 				
 				controls: true,
 				progress: true,
@@ -851,7 +849,7 @@ Reveal.on( 'customevent', function() {
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealToolbar ]
 				
 			
 				
