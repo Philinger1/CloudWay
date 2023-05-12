@@ -834,7 +834,7 @@ Reveal.on( 'customevent', function() {
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/Menu/menu.js"></script>
-		<script src="plugin/Toolbar/toolbar.js"></script>
+
 		<script>
 
 			// Also available as an ES module, see:
@@ -846,9 +846,13 @@ Reveal.on( 'customevent', function() {
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealToolbar ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu ]
 				
-				
+				dependencies: [
+			
+		  
+			{ src: 'plugin/Toolbar/toolbar.js' }
+		]
 				
 				
 				
