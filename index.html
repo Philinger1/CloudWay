@@ -834,7 +834,7 @@ Reveal.on( 'customevent', function() {
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/Menu/menu.js"></script>
-		<script src="plugin/toolbar/toolbar.js"></script>
+	
 
 		<script>
 
@@ -848,11 +848,31 @@ Reveal.on( 'customevent', function() {
 				progress: true,
 				center: true,
 				hash: true,
+				
+				
+					toolbar: {
+					fullscreen: true,
+					pause: true,
+					notes: false,
+					help:false,
+					overview:false,
+					captureMenu: false,
+					capturePlaybackControl: true
+				},
+				
+				
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu ]
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu ],
 				
-			
+			dependencies: [
+					
+					{ src: 'plugin/toolbar/toolbar.js', async: false },
+					// { src: 'plugin/chalkboard/chalkboard.js' },
+					// due to below src automatically opening blank notes
+					//{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+					
+				]
 				
 				
 				
